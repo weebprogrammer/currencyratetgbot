@@ -25,6 +25,6 @@ class Converter:
         except ValueError:
             raise ConvertionException(f"Неверно введено количество валюты '{amount}'")
 
-        r = requests.get(f'https://currate.ru/api/?get=rates&pairs={keys[quote]}{keys[base]}&key=07059f5883149133630be153252a483a')
+        r = requests.get(f'https://currate.ru/api/?get=rates&pairs={keys[quote]}{keys[base]}&key=YOUR_API_KEY')
         total_base = json.loads(r.content)['data'][keys[quote] + keys[base]]
         return total_base
