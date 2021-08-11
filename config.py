@@ -1,4 +1,4 @@
-TOKEN = '1900763369:AAFRFWB-qoaW32Zjq5Ks27rGUBbbRjA1gsM'
+TOKEN = 'YOUR_API_TOKEN'
 
 keys = {
     'доллар': 'USD',
